@@ -1,4 +1,4 @@
-﻿生成启动时间为 2017/2/17 11:17:56。
+﻿生成启动时间为 2017/2/17 11:33:59。
      1>项目“J:\lin\GitSpace\DynControl\DynControl\DynControl.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\DynControl.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
@@ -29,4 +29,4 @@
 
 生成成功。
 
-已用时间 00:00:00.67
+已用时间 00:00:00.55

@@ -171,7 +171,6 @@ void CDynControlDlg::OnBnClickedBtnAdd()
 		img.Load(_T("res/timg.jpg"));
 		HBITMAP hbitmap = img.Detach();
 		pPictureControl[index]->SetBitmap(hbitmap);
-		pPictureControl[index]->MoveWindow(rect);
 		pPictureControl[index]->m_hWnd;//»ñÈ¡HWND¾ä±ú
 	}
 	LeaveCriticalSection(&cs);
