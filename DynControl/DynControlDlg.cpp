@@ -166,12 +166,13 @@ void CDynControlDlg::OnBnClickedBtnAdd()
 		pPictureControl[index] = new CStatic();
 		int offset = (index+1)*10;
 		CRect rect = CRect (20 + offset, 50 + offset, 120 + offset, 150 + offset);
-		pPictureControl[index]->Create(_T( "" ), WS_CHILD | WS_VISIBLE | SS_BITMAP, rect, this);
+		pPictureControl[index]->Create(_T( "" ), WS_CHILD | WS_VISIBLE | SS_BITMAP | SS_REALSIZECONTROL, rect, this);
 		CImage img;
-		HRESULT ret = img.Load(_T("res/timg.jpg"));
+		img.Load(_T("res/timg.jpg"));
 		HBITMAP hbitmap = img.Detach();
 		pPictureControl[index]->SetBitmap(hbitmap);
 		pPictureControl[index]->MoveWindow(rect);
+		pPictureControl[index]->m_hWnd;//»ñÈ¡HWND¾ä±ú
 	}
 	LeaveCriticalSection(&cs);
 }
